@@ -1,0 +1,117 @@
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#top .logo{
+    position: absolute;
+    align-items: left;
+    height: 18%;
+    width: 16%;
+}
+
+#top .search input[type=text] {
+    float: right;
+    padding: 6px;
+    margin-top: 32px;
+    margin-right: 35px;
+    border: 2px solid;
+    font-size: 17px;
+}
+.button1>a:link, .button2>a:link, .button3>a:link,.button4>a:link,.button5>a:link, .button6>a:link{
+    color: white;
+    text-decoration: none;
+}
+#buttons>.button1>a:visited{
+    color: white;
+}
+#buttons>.button2>a:visited{
+    color: white;
+}
+#buttons>.button3>a:visited{
+    color: white;
+}
+#buttons>.button4>a:visited{
+    color: white;
+}
+#buttons>.button5>a:visited{
+    color: white;
+}
+
+.button1, .button2, .button3, .button4, .button5{
+    background-color: green;
+    text-align: center;
+    font-size: 25px;
+    display: inline-block;
+    cursor: pointer;
+    color: white;
+    padding: 40px 20px;
+    width: 19%;
+    gap: 30px;
+    border-radius: 12px;
+    /* box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19); */
+}
+.button1:hover, .button2:hover, .button3:hover, .button4:hover,.button5:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+#row>img{
+    height: 100px;
+}
+
+#images>img{
+    width: 450px;
+    height: 350px;
+}
+#image1>img{
+    width: 450px;
+    height: 350px;
+}
+#image2>img{
+    width: 450px;
+    height: 350px;
+}
+.move{
+    background-color: yellowgreen;
+}
+/* FOOTER */
+.footer{
+    padding: 50px 15% 10px;
+    border-top: 6px solid black;
+    color: white;
+    background-color: rgb(16, 0, 0);
+}
+
+.footer>h3{
+    font-size: 20px;
+    font-weight: 400;
+    text-align: left;
+    text-align-last: left;
+}
+
+.footer .col{
+    display: inline-table;
+    font-size: 10px;
+    flex-basis: 25%;
+    flex-grow: 1;
+    margin-bottom: 20px;
+    padding: 30px 50px 20px 10px;
+}
+
+.footer .col a{
+    display: block;
+    gap: 20%;
+    color: white;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.footer .row{
+    align-items: flex-start;
+    padding: 10px 0;
+
+}
+
+.copyright-txt{
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+

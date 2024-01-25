@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plant Problem Queries</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        form {
+            max-width: 400px;
+            margin: 20px auto;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Plant Problem Queries</h1>
+
+    <form action="submit_query.php" method="post">
+        <label for="plant">Plant Name:</label>
+        <input type="text" id="plant" name="plant" required placeholder="name of any seasonal plant name about which you want to know">
+
+        <label for="problem">Describe the Problem:</label>
+        <textarea id="problem" name="problem" rows="4" required placeholder="the leaves have holes or the growth of the plant's growth is slow..."></textarea>
+
+        <button type="submit">Submit Query</button>
+    </form>
+
+</body>
+</html>

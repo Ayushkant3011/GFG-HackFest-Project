@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scan</title>
+</head>
+<body>
+    <h1>Camera Scanner</h1>
+    <video id="camera" width="640" height="480" autoplay></video>
+    <canvas id="canvas" width="640" height="480" style="display: none;"></canvas>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const video = document.getElementById('camera');
+            const canvas = document.getElementById('canvas');
+            const context = canvas.getContext('2d');
+
+            // Get user media (camera) using WebRTC
+            navigator.mediaDevices.getUserMedia({ video: true })
+                .then(function (stream) {
+                    video.srcObject = stream;
+                })
+                .catch(function (error) {
+                    console.error('Error accessing camera: ', error);
+                });
+
+            // Capture image from video feed
+            function captureImage() {
+                context.drawImage(video, 0, 0, canvas.width, canvas.height);
+                // You can now use the captured image data (context.getImageData) for further processing.
+            }
+
+            // Trigger capture when a button is clicked
+            const captureButton = document.createElement('button');
+            captureButton.textContent = 'Capture Image';
+            captureButton.addEventListener('click', captureImage);
+            document.body.appendChild(captureButton);
+        });
+    </script>
+</body>
+</html>
